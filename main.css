@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* .box-img{
+    display: flex;
+    justify-content: center;
+}
+.img-miror{
+    margin-right: 15px;
+    list-style: none;
+}
+.img-miror img{
+    margin-bottom: 10px;
+    height: 150px;
+    display: flex;
+}
+.img-main img{
+    height: 630px;
+}
+.img{
+    height: 60px;
+} */
+.name-shop{
+    text-align: center;
+}
+.card{
+    width: 14rem !important;
+    margin-right: 15px;
+    margin-bottom: 15px ;
+}
+.card img{
+    height: 240px;
+}
+.item{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cart{
+    margin-top: 50px;
+}
+.cart h2{
+    text-align: center;
+}
+.card.cart-item img{
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+}
+.card.cart-item{
+    width: 530px !important;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.cart-body{
+    display: flex;
+    align-items: center;
+}
+.cart-body p{
+    margin-left: 15px;
+    margin-right: 10px;
+}
+.btn-delete ,
+.btn-buy{
+    color: aliceblue;
+    text-decoration: none;
+    margin-right: 8px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: gray;
+}
+.card-shop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.update-shop{
+    display: flex;
+    margin-left: 200px;
+    text-decoration: underline;
+    position: relative;
+}
+.update-shop p{
+    cursor: pointer;
+}
+.dropdown-menu.update-dropdown{
+    height: 450px;
+    width: 300px;
+    background-color: aqua;
+    padding-left: 20px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+.update-dropdown a{
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: gray;
+    color: aliceblue;
+    font-size: 15px;
+}
+.update-btn{
+    margin: 15px;
+}
+.img{
+    height: 100px;
+    width: 150px;
+}
+.uploadImg{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 150px;
+    border:  1px solid black;
+}
+.btn-delete1{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: gray;
+    text-decoration: none;
+    color: aliceblue;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+  <div class="shop">
+    <div class="nav">
+      <h1 class="name-shop"> Cửa hàng</h1>
+      <h5 class="update-shop">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Thêm Sản Phẩm
+          </button>
+          <ul class="dropdown-menu update-dropdown">
+            <div>
+              <label for="">Ảnh Sản Phẩm:</label>
+              <input type="file" id="img_product" accept="image/png, image/jpg" name="filename">
+            </div>
+            <div class="uploadImg">
+              <img src="" alt="" class="img">
+            </div>
+            <div>
+              <label for="">Tên Sản Phẩm:</label> <br>
+              <input type="text" name="" id="name-product">
+            </div>
+            <div>
+              <label for="">Giá:</label><br>
+              <input type="number" min="1" name="" id="price-product">
+            </div>
+            <div>
+              <label for="">Còn Số Sản Phẩm:</label><br>
+              <input type="number" min="0" name="" id="number-product" value="0">
+            </div>
+            <div>
+              <label for="">Khuyến Mãi Còn:</label><br>
+              <input type="text" name="" id="sale-product">
+            </div>
+            <div class="update-btn">
+              <a href="#" class="update">Thêm</a>
+              <a href="#" class="edit">Sửa thông tin</a>
+            </div>
+          </ul>
+        </div>
+      </h5>
+    </div>
+    <div class="item">
+      <!-- <div class="card" style="width: 16rem;">
+        <img src="https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/279223170_5185826608123376_7648976463602030894_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=pFm4hdHS8tsAX9ta50s&_nc_ht=scontent.fhan17-1.fna&oh=00_AT_utGFtiUDyfme3JCb-0drz4zioh_CYZr-MWTVnx6hbrA&oe=6355C310" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Quần áo 1</h5>
+          <p class="card-price"><span>270000</span>đ</p>
+          <p>Cửa hàng còn <span class="number-product">39</span> sản phẩm</p>
+          <p>Số Lượng Mua: <input type="number" id="quantity" name="quantity" min="1" value="1"> </p>
+          <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+          <a href="#" class="btn-delete1 btn-primary">Xóa</a>
+        </div>
+      </div> -->
+      <!-- <div class="card" style="width: 16rem;">
+        <img src="https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/279213346_5185826028123434_4483590769743302965_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=DACkFuCuP-sAX8aGWUN&_nc_oc=AQlJ_6DueLINGMyxQ2SlAwyItM8JUEp0DcxtW9aj8BzYBrR5WP5JqCU3946h4YQ1kWA&_nc_ht=scontent.fhan17-1.fna&oh=00_AT9Giw4iRAS0gShyZ_J_KP7scBmyyZGnh6-ShJqpEQZXIg&oe=63554C80" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Quần áo 2</h5>
+          <p class="card-price"><span>500</span>đ</p>
+          <p>Cửa hàng còn <span>39</span> sản phẩm</p>
+          <p>Số Lượng Mua: <input type="number" id="quantity" name="quantity" min="1" value="1"> </p>
+          <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+        </div>
+      </div>
+      <div class="card" style="width: 16rem;">
+        <img src="https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/278840301_5185825781456792_1767336979193596047_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=Q06wvqR7ui4AX8mDMwl&_nc_ht=scontent.fhan17-1.fna&oh=00_AT_HvTnYdH2fZajB6Asq86sG_KSwbQZdPzs7uRj-lJ_3yw&oe=63550C65" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Quần áo 3</h5>
+          <p class="card-price"><span>410000</span>đ</p>
+          <p>Cửa hàng còn <span>39</span> sản phẩm</p>
+          <p>Số Lượng Mua: <input type="number" id="quantity" name="quantity" min="1" value="1"> </p>
+          <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+        </div>
+      </div>
+      <div class="card" style="width: 16rem;">
+        <img src="https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/279368360_5185826051456765_4102039478921371366_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=VZIIBU-rW1IAX_iqNvt&_nc_ht=scontent.fhan17-1.fna&oh=00_AT9w2fmvzmZ3OQAx9XNH5XHT-b5Ac_eh2b51mdNCX56cgw&oe=6356CAB9" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Quần áo 4</h5>
+          <p class="card-price"><span>400000</span>đ</p>
+          <p>Cửa hàng còn <span>39</span> sản phẩm</p>
+          <p>Số Lượng Mua: <input type="number" id="quantity" name="quantity" min="1" value="1"> </p>
+          <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+        </div>
+      </div>
+      <div class="card" style="width: 16rem;">
+        <img src="https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/279081432_5185825411456829_2279483855797656938_n.jpg?stp=dst-jpg_p600x600&_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=UksjCnhfvL8AX-GdfwL&tn=pvAjQEoD0fhSMxAT&_nc_ht=scontent.fhan17-1.fna&oh=00_AT8LQsfpiFOhoGmjeZUWeJ-kOjOglT4MEyMLBbXcvM2-Vg&oe=63559041" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Quần áo 5</h5>
+          <p class="card-price"><span>350000</span>đ</p>
+          <p>Cửa hàng còn <span>39</span> sản phẩm</p>
+          <p>Số Lượng Mua: <input type="number" id="quantity" name="quantity" min="1" value="1"> </p>
+          <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+        </div>
+      </div>
+      <div class="card" style="width: 16rem;">
+        <img src="https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/279034809_5185826031456767_7541055406645962689_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=undpOGblfOoAX_ig4WO&_nc_ht=scontent.fhan17-1.fna&oh=00_AT-mtNekQFgxkDPGMPNoHD4Gacds8AnIOoZ9jhpPrYFdzA&oe=6355F49A" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Quần áo 6</h5>
+          <p class="card-price"><span>300000</span>đ</p>
+          <p>Cửa hàng còn <span>39</span> sản phẩm</p>
+          <p>Số Lượng Mua: <input type="number" id="quantity" name="quantity" min="1" value="1"></p>
+          <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+        </div>
+      </div>  -->
+    </div>
+    <div class="cart ">
+      <h2>Giỏ hàng</h2>
+      <div class="card-shop">
+        <!-- <div class="card cart-item">
+          <img src="https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/279034809_5185826031456767_7541055406645962689_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=undpOGblfOoAX_ig4WO&_nc_ht=scontent.fhan17-1.fna&oh=00_AT-mtNekQFgxkDPGMPNoHD4Gacds8AnIOoZ9jhpPrYFdzA&oe=6355F49A" class="img-fluid rounded-start" alt="...">
+          <div class="cart-body">
+            <h5 class="card-title">Quần áo 6</h5>
+            <p class="card-price"><span>300.000</span>đ</p>
+            <p>Số Lượng: <span>1</span></p>
+            <a href="#" class="btn-delete btn-primary">Xóa</a>
+            <a href="#" class="btn-buy btn-primary">Mua</a>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+    <!-- <div class="box-img">
+        <ul class="img-miror">
+            <li><img src="https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/310986964_5678082105564488_7135722455731165630_n.jpg?stp=dst-jpg_p600x600&_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=0Xhn55tfOPgAX-pjAP_&_nc_ht=scontent.fhan5-10.fna&oh=00_AT8V5kWLEEVosPGz2658yjm3D6Ihwt4ue5vkWec85MMqSw&oe=6353CDAC" alt=""  id="one"></li>
+            <li><img src="https://scontent-hkt1-2.xx.fbcdn.net/v/t39.30808-6/309276325_5678082965564402_4865029235658336400_n.jpg?stp=dst-jpg_p600x600&_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=Q8xFehp01eIAX-5tV7p&_nc_ht=scontent-hkt1-2.xx&oh=00_AT_sJRft2_yP3qmA3Wh1ZEIZilEoZCtt5S68pQRC3aZKCw&oe=635300DE" alt=""  id="two"></li>
+            <li><img src="https://scontent.fhan5-1.fna.fbcdn.net/v/t39.30808-6/311318287_5678082992231066_2117743472493895254_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=NOzPbN0OFX8AX88bRbg&_nc_oc=AQl1lIKGP1PqkFjgeUOTNCP1dtiqOemfgAwqeWGYSJ2pvD98yqjNrQkemNqsMDYzZBWIG7dFi8WSf-UBbEKPBizb&_nc_ht=scontent.fhan5-1.fna&oh=00_AT-0lDnRbO8pJppd-B2hRLtMCNraFLSllG8C-Tj2uYLwTA&oe=63546C64" alt="" id="three"></li>
+            <li><img src="https://scontent-hkt1-2.xx.fbcdn.net/v/t39.30808-6/311988775_5678082998897732_2706577341684616722_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=sq6Je90VmCsAX9XTt12&_nc_oc=AQltuRhAfrN0Vkm2LjpacFrwXVL8UH6A49hBWAa3PLZnR_R-96tUastd-MzlhwfoX-ubAMGwF0tpR7Whxh7Lo36w&_nc_ht=scontent-hkt1-2.xx&oh=00_AT99LALxw0gzn5XpR3rVoz08DJ2Ix-62tiqqgPYvcQ9dgA&oe=6352A742" alt=""  id="four"></li> 
+        </ul>
+        <div class="img-main">
+            <img src="https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/310986964_5678082105564488_7135722455731165630_n.jpg?stp=dst-jpg_p600x600&_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=0Xhn55tfOPgAX-pjAP_&_nc_ht=scontent.fhan5-10.fna&oh=00_AT8V5kWLEEVosPGz2658yjm3D6Ihwt4ue5vkWec85MMqSw&oe=6353CDAC" alt="" id="img-main">
+        </div>
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="./dom.js"></script>
+</body>
+</html>
